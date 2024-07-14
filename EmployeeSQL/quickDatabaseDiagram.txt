@@ -23,18 +23,18 @@ hire_date date
 
 dept_emp
 -
-emp_no integer FK >- employee.emp_no
-dept_no varchar(5) FK >- departments.dept_no
+emp_no integer pk FK >- employee.emp_no
+dept_no varchar(5) pk FK >- departments.dept_no
 
 
 dept_manager
 -
-dept_no varchar(5) FK >- departments.dept_no
-emp_no integer FK >- employee.emp_no
+dept_no varchar(5) pk FK >- departments.dept_no
+emp_no integer pk FK >- employee.emp_no
 
 
 salaries
 -
-emp_no integer FK >- employee.emp_no
+emp_no integer FK >- employee.emp_no pk
 salary integer
 

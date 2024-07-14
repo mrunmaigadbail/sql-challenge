@@ -1,14 +1,5 @@
--- drop tables if exits
-
-drop table if exists departments;
-drop table if exists dept_emp;
-drop table if exists dept_manager;
-drop table if exists employee;
-drop table if exists salaries;
-drop table if exists titles;
-
--- creating tables
 -- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
+-- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 
 
 CREATE TABLE "titles" (
@@ -81,7 +72,6 @@ REFERENCES "employee" ("emp_no");
 
 ALTER TABLE "salaries" ADD CONSTRAINT "fk_salaries_emp_no" FOREIGN KEY("emp_no")
 REFERENCES "employee" ("emp_no");
-
 
 -- Check tables 
 select * from departments;
